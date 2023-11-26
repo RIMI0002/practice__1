@@ -1,0 +1,16 @@
+//write a program to find the sum of n numbers using recursion.
+#include<stdio.h>
+int sum(int x){
+    if(x==0){
+        return x;
+    }
+    return sum (x-1) + x;
+}
+int main(){
+    int num,result;
+    printf("ENTER THE RANGE:");
+     scanf("%d",&num);
+    result=sum(num);
+    printf("%d",result);
+    return 0;
+}
