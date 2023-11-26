@@ -1,0 +1,22 @@
+//Write a c program to find the area of circle using recursive function by taking radius as user input. If r=0, the program should stop.
+#include<stdio.h>
+void area(int r){
+    int m;
+    if(r==0){
+        printf("STOP!\n");
+    }
+    else{
+        printf("AREA OF THE CIRCLE IS\n : %f",3.14*r*r);
+        printf("\nENTER THE NEW RADIUS\n :");
+        scanf("%d",&m);
+        area(m);
+
+    }
+}
+int main(){
+    int r;
+    printf("ENTER THE RADIUS:\n");
+    scanf("%d",&r);
+    area(r);
+    return 0;
+};
