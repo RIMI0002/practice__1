@@ -1,0 +1,15 @@
+//Write a c program to create 1 dimensional array by taking size and elements from user and display it.
+#include <stdio.h>
+int main(){
+    int size;
+    printf("ENTER THE SIZE :\n");
+    scanf("%d",&size);
+int num[size],i;
+for(i=0;i<size;i++){
+    printf("enter element number : %d\n",i);
+    scanf("%d",&num[i]);
+}
+for(i=0;i<size;i++){
+    printf("%d\t",num[i]);
+}
+}
